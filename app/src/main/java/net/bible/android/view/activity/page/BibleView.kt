@@ -271,6 +271,7 @@ class BibleView(val mainBibleActivity: MainBibleActivity,
                       chapterVerse: ChapterVerse? = null,
                       yOffsetRatio: Float? = null)
     {
+        isEditing = false
         synchronized(this) {
             var finalHtml = html
             // set background colour if necessary
