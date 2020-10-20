@@ -162,7 +162,7 @@ class DocumentControl @Inject constructor(
         swordDocumentFacade.deleteDocument(document)
 
         val currentPage = activeWindowPageManagerProvider.activeWindowPageManager.getBookPage(document)
-        currentPage?.checkCurrentDocumentStillInstalled()
+        currentPage.checkCurrentDocumentStillInstalled()
     }
 
     /**
